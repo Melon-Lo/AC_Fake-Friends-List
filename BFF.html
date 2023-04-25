@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Friend List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a href="" class="navbar-brand">Fake Friends List</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./BFF.html">Best Friends Forever</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- container -->
+  <div class="container ms-0">
+
+    <!-- search bar -->
+    <div class="row">
+      <form class="row row-cols-lg-auto g-3 align-items-center mb-2" id="search-form">
+        <div class="col-12">
+          <label class="visually-hidden" for="search-input">
+            Search Keyword
+          </label>
+          <input type="text" class="form-control" id="search-input" placeholder="Keyword..." />
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" id="search-submit">
+            Search
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- data panel -->
+    <div class="row justify-content-center align-items-center" id="data-panel">
+      <!--    render data here    -->
+    </div>
+
+  </div>
+
+  <!-- page nav -->
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center" id="paginator">
+    </ul>
+  </nav>
+
+  <!-- modal sample -->
+  <div class="modal" id="person-modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="modal-title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="modal-person-img"><img src="#" alt="modal-person-img"></div>
+          <div id="modal-gender"></div>
+          <div id="modal-age"></div>
+          <div id="modal-birthday"></div>
+          <div id="modal-region"></div>
+          <div id="modal-email"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="./BFF.js"></script>
+</body>
+
+</html>
